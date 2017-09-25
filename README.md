@@ -4,7 +4,7 @@
 The application  shows a list of ticlkets from zendesk tickets api
 
 ## demo
-<img src="http://hanabelete.com/tickets.png" width="325" height="667">
+<img src="http://hanabelete.com/tickets.png" width="325" height="600">
 
 ## To Run it
  * Download project 
