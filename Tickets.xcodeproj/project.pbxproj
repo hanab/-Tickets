@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A0F8CB91F78E2B3007308F1 /* TicketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0F8CB81F78E2B3007308F1 /* TicketsTableViewCell.swift */; };
+		1A0F8CC01F78F26B007308F1 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0F8CBF1F78F26B007308F1 /* ColorExtension.swift */; };
+		1A0F8CC21F78F27A007308F1 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0F8CC11F78F27A007308F1 /* FontExtension.swift */; };
+		1A0F8CC41F78F290007308F1 /* AlertViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0F8CC31F78F290007308F1 /* AlertViewExtension.swift */; };
+		1A1639461F7665190059B7F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1639451F7665190059B7F0 /* AppDelegate.swift */; };
+		1A1639481F7665190059B7F0 /* TicketsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1639471F7665190059B7F0 /* TicketsListViewController.swift */; };
+		1A1639501F7665190059B7F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A16394F1F7665190059B7F0 /* Assets.xcassets */; };
+		1A16395E1F7665190059B7F0 /* TicketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16395D1F7665190059B7F0 /* TicketsTests.swift */; };
+		1A16396F1F7665FC0059B7F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A16396E1F7665FC0059B7F0 /* Main.storyboard */; };
+		1A1639731F7666210059B7F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1639721F7666210059B7F0 /* LaunchScreen.storyboard */; };
+		1A1639751F76679B0059B7F0 /* ZendeskApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1639741F76679B0059B7F0 /* ZendeskApiClient.swift */; };
+		1A1639771F767AC10059B7F0 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1639761F767AC10059B7F0 /* Ticket.swift */; };
+		1A1639791F767BDB0059B7F0 /* ZendeskAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1639781F767BDB0059B7F0 /* ZendeskAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A16395A1F7665190059B7F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A16393A1F7665180059B7F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A1639411F7665190059B7F0;
+			remoteInfo = Tickets;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A0F8CB81F78E2B3007308F1 /* TicketsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsTableViewCell.swift; sourceTree = "<group>"; };
+		1A0F8CBF1F78F26B007308F1 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		1A0F8CC11F78F27A007308F1 /* FontExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		1A0F8CC31F78F290007308F1 /* AlertViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewExtension.swift; sourceTree = "<group>"; };
+		1A1639421F7665190059B7F0 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A1639451F7665190059B7F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A1639471F7665190059B7F0 /* TicketsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListViewController.swift; sourceTree = "<group>"; };
+		1A16394F1F7665190059B7F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A1639541F7665190059B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1639591F7665190059B7F0 /* TicketsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A16395D1F7665190059B7F0 /* TicketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsTests.swift; sourceTree = "<group>"; };
+		1A16395F1F7665190059B7F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A16396E1F7665FC0059B7F0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1A1639721F7666210059B7F0 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A1639741F76679B0059B7F0 /* ZendeskApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZendeskApiClient.swift; sourceTree = "<group>"; };
+		1A1639761F767AC10059B7F0 /* Ticket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		1A1639781F767BDB0059B7F0 /* ZendeskAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZendeskAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A16393F1F7665190059B7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1639561F7665190059B7F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0F8CBA1F78F1BE007308F1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F8CBE1F78F234007308F1 /* ViewControllerUtils */,
+				1A0F8CBB1F78F1D7007308F1 /* UIUtils */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1A0F8CBB1F78F1D7007308F1 /* UIUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F8CBD1F78F223007308F1 /* Colors */,
+				1A0F8CBC1F78F213007308F1 /* Fonts */,
+			);
+			path = UIUtils;
+			sourceTree = "<group>";
+		};
+		1A0F8CBC1F78F213007308F1 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F8CC11F78F27A007308F1 /* FontExtension.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1A0F8CBD1F78F223007308F1 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F8CBF1F78F26B007308F1 /* ColorExtension.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		1A0F8CBE1F78F234007308F1 /* ViewControllerUtils */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F8CC31F78F290007308F1 /* AlertViewExtension.swift */,
+			);
+			path = ViewControllerUtils;
+			sourceTree = "<group>";
+		};
+		1A1639391F7665180059B7F0 = {
+			isa = PBXGroup;
+			children = (
+				1A1639441F7665190059B7F0 /* Tickets */,
+				1A16395C1F7665190059B7F0 /* TicketsTests */,
+				1A1639431F7665190059B7F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A1639431F7665190059B7F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A1639421F7665190059B7F0 /* Tickets.app */,
+				1A1639591F7665190059B7F0 /* TicketsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1A1639441F7665190059B7F0 /* Tickets */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F8CBA1F78F1BE007308F1 /* Utils */,
+				1A16396D1F76659C0059B7F0 /* Support Files */,
+				1A16396C1F7665820059B7F0 /* Resources */,
+				1A16396B1F76656F0059B7F0 /* Network */,
+				1A16396A1F7665580059B7F0 /* Models */,
+				1A1639691F76653F0059B7F0 /* Controllers */,
+				1A1639681F76652D0059B7F0 /* Views */,
+				1A1639451F7665190059B7F0 /* AppDelegate.swift */,
+			);
+			path = Tickets;
+			sourceTree = "<group>";
+		};
+		1A16395C1F7665190059B7F0 /* TicketsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1A16395D1F7665190059B7F0 /* TicketsTests.swift */,
+				1A16395F1F7665190059B7F0 /* Info.plist */,
+			);
+			path = TicketsTests;
+			sourceTree = "<group>";
+		};
+		1A1639681F76652D0059B7F0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A0F8CB81F78E2B3007308F1 /* TicketsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1A1639691F76653F0059B7F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A1639471F7665190059B7F0 /* TicketsListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A16396A1F7665580059B7F0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1A1639761F767AC10059B7F0 /* Ticket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1A16396B1F76656F0059B7F0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1A1639741F76679B0059B7F0 /* ZendeskApiClient.swift */,
+				1A1639781F767BDB0059B7F0 /* ZendeskAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1A16396C1F7665820059B7F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A16394F1F7665190059B7F0 /* Assets.xcassets */,
+				1A16396E1F7665FC0059B7F0 /* Main.storyboard */,
+				1A1639721F7666210059B7F0 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A16396D1F76659C0059B7F0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A1639541F7665190059B7F0 /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A1639411F7665190059B7F0 /* Tickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1639621F7665190059B7F0 /* Build configuration list for PBXNativeTarget "Tickets" */;
+			buildPhases = (
+				1A16393E1F7665190059B7F0 /* Sources */,
+				1A16393F1F7665190059B7F0 /* Frameworks */,
+				1A1639401F7665190059B7F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tickets;
+			productName = Tickets;
+			productReference = 1A1639421F7665190059B7F0 /* Tickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1A1639581F7665190059B7F0 /* TicketsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A1639651F7665190059B7F0 /* Build configuration list for PBXNativeTarget "TicketsTests" */;
+			buildPhases = (
+				1A1639551F7665190059B7F0 /* Sources */,
+				1A1639561F7665190059B7F0 /* Frameworks */,
+				1A1639571F7665190059B7F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A16395B1F7665190059B7F0 /* PBXTargetDependency */,
+			);
+			name = TicketsTests;
+			productName = TicketsTests;
+			productReference = 1A1639591F7665190059B7F0 /* TicketsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A16393A1F7665180059B7F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "___HANADEMAS___";
+				TargetAttributes = {
+					1A1639411F7665190059B7F0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JQ99DJ6SM6;
+						ProvisioningStyle = Automatic;
+					};
+					1A1639581F7665190059B7F0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1A1639411F7665190059B7F0;
+					};
+				};
+			};
+			buildConfigurationList = 1A16393D1F7665190059B7F0 /* Build configuration list for PBXProject "Tickets" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A1639391F7665180059B7F0;
+			productRefGroup = 1A1639431F7665190059B7F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A1639411F7665190059B7F0 /* Tickets */,
+				1A1639581F7665190059B7F0 /* TicketsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A1639401F7665190059B7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1639731F7666210059B7F0 /* LaunchScreen.storyboard in Resources */,
+				1A1639501F7665190059B7F0 /* Assets.xcassets in Resources */,
+				1A16396F1F7665FC0059B7F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1639571F7665190059B7F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A16393E1F7665190059B7F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A1639481F7665190059B7F0 /* TicketsListViewController.swift in Sources */,
+				1A1639461F7665190059B7F0 /* AppDelegate.swift in Sources */,
+				1A0F8CC41F78F290007308F1 /* AlertViewExtension.swift in Sources */,
+				1A0F8CC21F78F27A007308F1 /* FontExtension.swift in Sources */,
+				1A1639791F767BDB0059B7F0 /* ZendeskAPI.swift in Sources */,
+				1A1639751F76679B0059B7F0 /* ZendeskApiClient.swift in Sources */,
+				1A1639771F767AC10059B7F0 /* Ticket.swift in Sources */,
+				1A0F8CC01F78F26B007308F1 /* ColorExtension.swift in Sources */,
+				1A0F8CB91F78E2B3007308F1 /* TicketsTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A1639551F7665190059B7F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A16395E1F7665190059B7F0 /* TicketsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1A16395B1F7665190059B7F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A1639411F7665190059B7F0 /* Tickets */;
+			targetProxy = 1A16395A1F7665190059B7F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1A1639601F7665190059B7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A1639611F7665190059B7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1A1639631F7665190059B7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JQ99DJ6SM6;
+				INFOPLIST_FILE = "$(SRCROOT)/Tickets/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HANABELETE.Tickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1A1639641F7665190059B7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JQ99DJ6SM6;
+				INFOPLIST_FILE = "$(SRCROOT)/Tickets/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HANABELETE.Tickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1A1639661F7665190059B7F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TicketsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HANABELETE.TicketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tickets.app/Tickets";
+			};
+			name = Debug;
+		};
+		1A1639671F7665190059B7F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TicketsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = HANABELETE.TicketsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tickets.app/Tickets";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A16393D1F7665190059B7F0 /* Build configuration list for PBXProject "Tickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1639601F7665190059B7F0 /* Debug */,
+				1A1639611F7665190059B7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1639621F7665190059B7F0 /* Build configuration list for PBXNativeTarget "Tickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1639631F7665190059B7F0 /* Debug */,
+				1A1639641F7665190059B7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A1639651F7665190059B7F0 /* Build configuration list for PBXNativeTarget "TicketsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A1639661F7665190059B7F0 /* Debug */,
+				1A1639671F7665190059B7F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A16393A1F7665180059B7F0 /* Project object */;
+}
