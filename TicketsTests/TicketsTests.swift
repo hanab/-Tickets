@@ -39,6 +39,7 @@ class TicketsTests: XCTestCase {
         waitForExpectations(timeout: 10, handler: nil)
     }
     
+    //test object initialization
     func testDataInitializationTest() {
         var ticket:Ticket = Ticket(subject: "", description: "", status: "", ticketNumber: 1)
         ticket.description = "test ticket"
